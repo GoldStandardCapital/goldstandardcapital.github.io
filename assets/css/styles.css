@@ -3,12 +3,17 @@
   --black: #000;
 }
 
+body {
+  margin: 0;
+}
+
 #wrapper {
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0;
 }
 
 .construction-container {
@@ -17,9 +22,11 @@
   justify-content: center;
   align-items: center;
   border: solid 1px var(--black);
-  padding: 3rem 1rem;
+  padding: 5rem 1rem;
   position: relative;
   font-family: 'Lato', sans-serif;
+  max-width: calc(100% - 2rem);
+  margin: 0 1rem;
 }
 
 .construction-container::before {
@@ -35,6 +42,7 @@
 
 .construction-container img {
   margin-bottom: 2rem;
+  max-width: 100%;
 }
 
 .under-construction {
@@ -42,9 +50,11 @@
   font-size: 2rem;
   letter-spacing: 0.1rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .contact {
   font-size: 1.2rem;
   letter-spacing: 1px;
+  text-align: center;
 }
